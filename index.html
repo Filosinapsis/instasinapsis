@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstaSinapsis</title>
+    <meta name="theme-color" content="#80d8ff" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <section class="instasinapsis">
+      <img
+        src="./instasinapsis_logo.jpg"
+        class="filosinapsis-logo"
+        id="filosinapsis-logo"
+      />
+    </section>
+    <section class="search-form" method="POST">
+      <div class="search-form-container">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          autofocus
+          class="search-input"
+          spellcheck="false"
+        />
+        <button onclick="searchSinapsis()" class="search-button">Buscar</button>
+      </div>
+      <br />
+      <div class="searchtype-container">
+        <p>
+          <input
+            type="radio"
+            name="automated-search"
+            id=""
+            value="button"
+            checked
+            onclick="changeSearchBehaviour('button')"
+          />
+          Búsqueda por botón
+        </p>
+        &nbsp;
+        <p>
+          <input
+            type="radio"
+            name="automated-search"
+            id=""
+            value="automatic"
+            onclick="changeSearchBehaviour('automatic')"
+          />
+          Búsqueda automática
+        </p>
+      </div>
+    </section>
+    <section class="results" id="results">
+      <i>El contenido encontrado en Filosinapsis es continuamente revisado</i>
+    </section>
+  </body>
+</html>
