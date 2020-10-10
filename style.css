@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+:root {
+  --color-primary: #80d8ff;
+}
+
+.instasinapsis {
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.filosinapsis-logo {
+  width: 200px;
+  margin: 15px;
+}
+
+.results {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::selection {
+  background-color: #000000;
+  color: white;
+}
+
+.search-input {
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: 2px solid #f0f0f0;
+  font-size: 2rem;
+  font-size: 1.1rem;
+  width: 400px;
+  transition-property: border, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.search-input:focus {
+  border: 2px solid var(--color-primary);
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  background-color: var(--color-primary);
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #f0f0f0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.search-button:hover {
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+  background-color: #49a7cc;
+}
+
+.result-container {
+  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 2px solid #f0f0f0;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-left: 55px;
+  margin-right: 55px;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.result-container:hover {
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.result__information {
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.result__title {
+  text-decoration: none;
+}
+
+.result__information {
+  padding-left: 15px;
+}
+
+@media (max-width: 620px) {
+  .search-form-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .search-input {
+    width: 90%;
+  }
+  .search-button {
+    width: 90%;
+  }
+  .searchtype-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+  }
+  .results {
+    margin-top: 40px;
+  }
+  .result__thumbnail {
+    display: none !important;
+  }
+}
