@@ -158,4 +158,7 @@ a {
   .result__information {
     width: unset;
   }
+  .legend {
+    display: none;
+  }
 }
