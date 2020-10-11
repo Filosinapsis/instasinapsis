@@ -144,10 +144,18 @@ a {
     justify-content: center;
     align-self: center;
   }
+  .result-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .results {
     margin-top: 40px;
+    padding: 5px;
   }
   .result__thumbnail {
     display: none !important;
+  }
+  .result__information {
+    width: unset;
   }
 }
