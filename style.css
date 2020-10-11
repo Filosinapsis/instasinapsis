@@ -126,7 +126,6 @@ a {
 
 @media (max-width: 620px) {
   .search-form-container {
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
